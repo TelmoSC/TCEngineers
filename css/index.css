@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Libre+Barcode+128&family=Play:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    padding: 10px;
+    height: 160px;
+    /* background: linear-gradient(180deg, rgb(210,210,210) 0% , rgb(210,210,210) 95%, rgb(150, 150, 150) 95%, rgb(230, 230, 230) 100%); */
+    /* background-color: rgb(210,210,210) */
+}
+
+
+body{
+    background-color: rgb(230,230,230);
+    /* Wallpaper como background: */
+    /* background-image: url(../img/wallpaper_cupula_1920x1000.jpg);
+    background-repeat: no-repeat;
+    background-position: top; */
+}
+
+footer{
+    background-color: rgb(210,210,210);
+    height: 120px;
+    box-shadow: 0px 0px 10px rgb(50,50,50);
+    margin: 0;
+
+    /* background: linear-gradient(0deg, rgb(150, 150, 150) 50%, rgb(230, 230, 230) 100%); */
+}
+
+.footer_text{
+    color: rgb(100,100,100);
+
+    /* <uniquifier>: Use a unique and descriptive class name
+    <weight>: Use a value from 300 to 900 */
+
+    font-family: "Figtree", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    text-align: center;
+}
+
+.body_text{
+    color: rgb(100,100,100);
+
+    /* <uniquifier>: Use a unique and descriptive class name
+    <weight>: Use a value from 300 to 900 */
+
+    font-family: "Figtree", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+}
+
+.img_logotipo{
+    height: 100px;
+    margin-left: 10px;
+
+    /* Tentativa de reduzir a escala ao fazer scroll: */
+    /* animation: scaleAnimation linear;
+    animation-duration: 5ms;
+    animation-range: entry 0% cover 100%; 
+    animation-timeline: view(); */
+}
+
+/* @keyframes scaleAnimation {
+    from { height: 100px; }
+    to { height: 50px; }
+} */
+
+.menu_principal, .menu_secundario, .nav-link{
+    color: rgb(150,150,150);
+
+    /* <uniquifier>: Use a unique and descriptive class name
+    <weight>: Use a value from 300 to 900 */
+
+    font-family: "Figtree", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+}
+
+/* .menu_secundario{
+    font-weight: 400;
+    font-size: 20px;
+} */
+
+.title{
+    color: black;
+        /* <uniquifier>: Use a unique and descriptive class name
+    <weight>: Use a value from 300 to 900 */
+
+    font-family: "Figtree", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.nav-link{
+    margin-right: 10px;
+}
+
+.nav-link:hover{
+    color: rgb(110,110,110);
+    /* scale: 1.01; */
+    /* text-shadow: 0px 0px 2px rgb(100,100,100); */
+    /* box-shadow: 5px 5px 10px black; */
+}
+
+.navbar{
+    padding: 10px;
+    background-color: rgba(210, 210, 210, 0.95);
+    /* background: linear-gradient(180deg, rgb(210,210,210) 0% , rgb(210,210,210) 95%, rgb(150, 150, 150) 95%, rgb(230, 230, 230) 100%); */
+    box-shadow: 0px 0px 10px rgb(50,50,50);
+}
+
+.zoom_with_boundary{
+    overflow: hidden;
+}
+
+.wallpaper-title{
+    color: white;
+    /* <uniquifier>: Use a unique and descriptive class name
+    <weight>: Use a value from 300 to 900 */
+    font-family: "Figtree", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 50px;
+    padding-right: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+    transition: 0.2s;
+}
+
+.wallpaper-title:hover{
+    /* color: rgb(200,200,200); */
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+/* animação do texto sobre wallpaper inicial */
+.write_animation{
+    animation:
+    typewriter 2s steps(50) 1s 1 normal both;
+}
+
+@keyframes typewriter {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.write_animation_linha1{
+    animation: typewriter 2s steps(50) 1s 1 normal both;
+}
+
+.write_animation_linha2{
+    animation: typewriter 2s steps(50) 2s 1 normal both;
+}
+
+.write_animation_linha3{
+    animation: typewriter 2s steps(50) 3s 1 normal both;
+}
+
+.write_animation_linha4{
+    animation: typewriter 2s steps(50) 4s 1 normal both;
+}
+
+.write_animation_linha5{
+    animation: typewriter 2s steps(50) 5s 1 normal both;
+}
+
+.wallpaper{
+    max-width: 100%;
+    width: 100%;
+    height: 1000px;
+    margin-top: -160px;
+    object-fit: none;
+    object-position: 0% 0;
+}
+
+@keyframes position {
+    from { object-position: center; }
+    to { object-position: top; }
+  }
+
+.wallpaper_move img{
+    animation: position linear;
+    animation-timeline: view();
+    /* animation-range: entry 25% cover 50%; */
+    animation-range: entry 0% cover 100%; /* Equivalent to entry 0% exit 100% */
+}
+
+.section_wallpaper{
+    height: 1000px;
+    margin: 0px;
+}
+
+/* .dropdown-menu{
+    background-color: rgb(240,240,240);
+} */
+
+/* section_0: Portefólio */
+.section_projetos{
+    height: 1100px;
+    max-width: 80%;
+    text-align: center;
+    margin-top: -100px;
+}
+
+.section_projetos .card{
+    width: 450px;
+    text-align: center;
+}
+
+.section_projetos .card-img-top{
+    margin-left:auto;
+    margin-right:auto;
+    width: 450px;
+    height: 300px;
+    border-radius: 5px;
+    filter: none;
+    transform: scale(1.0);
+    transition: 300ms ease-in-out;
+}
+
+/* card-img-overlay: class do texto sobreposto na imagem */
+.section_projetos .card-img-overlay{
+    padding-top: 120px;
+    color: transparent;
+    transition: 300ms ease-in-out;
+}
+
+/* Hover no card: efeito no texto*/
+.section_projetos .card:hover .card-img-overlay{
+    color: white;
+    transform: scale(1.0);
+    transition: 300ms ease-in-out;
+}
+
+/* Hover no card: efeito na imagem*/
+.section_projetos .card:hover img{
+    filter:brightness(40%) grayscale(100%);
+    transform: scale(1.1);
+    transition: transform 300ms ease-in-out;
+}
+
+.section_projetos .card:hover{
+    box-shadow: 0px 0px 10px rgb(150,150,150);
+}
+
+.section_servicos{
+    padding-top: 20px;
+    height: 2000px;
+    max-width: 80%;
+    text-align: center;
+}
+
+.section_servicos .card{
+    background-color: rgb(240,240,240);
+    transition: 0.2s;
+}
+
+.section_servicos .card:hover{
+    box-shadow: 0px 0px 10px rgb(150,150,150);
+}
+
+.section_servicos .card-body{
+    color: rgb(50,50,50);
+    text-align: left;
+    padding-top: 10%;
+    padding-right: 10%;
+}
+
+.section_servicos .card:hover .card-title{
+    color: black;
+}
+
+.section_servicos .img-card{
+    height: 300px;
+    width: 450px;
+    border-radius: 5px;
+    filter:grayscale(100);
+}
+
+.section_servicos .card:hover img{
+    filter: none;
+}
+
+
+.section_clientes{
+    height: 200px;
+    max-width: 80%;
+}
+
+.card_clientes{
+    background-color: white;
+    border-radius: 5px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_clientes{
+    height: 100px;
+    max-width: 100%;
+    padding-left: 50px;
+}
+
+
+
+
+
+
+
+.section_contactos{
+    height: 500px;
+    max-width: 80%;
+}
+
+.form-control{
+    border-color:rgb(210,210,210);
+    font-size: small;
+    color: black;
+}
+
+.form-control:hover{
+    border-color: rgb(150,150,150);
+    transition: 0.2s;
+}
+
+.section_resposta_form{
+    height: 100%;
+    max-width: 80%;
+    text-align: center;
+}
+
+/* Botão Enviar do formulário */
+
+.btn-outline-secondary{
+    border-color:rgb(210,210,210);
+    width: 100%;
+    background: rgb(240,240,240);
+}
+
+.btn-outline-secondary:hover{
+    color:black;
+    background: rgb(230,230,230);
+    border-color: rgb(150,150,150);
+    transition: 0.2s;
+}
+
+/* Configuração dos logotipos das redes sociais */
+
+.fa-brands, .fa-solid{
+    color: rgb(150,150,150);
+    font-size: 25px;
+    transition: color 0.2s;
+    vertical-align: middle;
+}
+
+.fa-brands:hover, .fa-solid:hover{
+    color: rgb(110,110,110);
+}
+
+
+/* Configuração do botão de regresso ao topo */
+
+.botao-topo i{
+    font-size: 35px;
+}
+
+.botao-topo{
+    visibility: hidden;
+    bottom: 100px;
+    text-align: center;
+}
+
+.botao-topo-mostrar{
+    visibility: visible;
+    animation: fade-in 0.3s ease-in forwards;
+}
+
+.botao-topo-esconder{
+    visibility: hidden;
+    animation: fade-out 0.3s ease-in forwards;
+}
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fade-out {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+
+
+/* Configurações para telemóveis: */
+@media screen and (max-width: 599px)
+{
+    .img_logotipo{
+        height: 80px;
+        margin: 10px;
+        align: center;
+    }
+
+    .wallpaper-title{
+        font-size: 30px;
+    }
+}
+
+/* Configurações para tablets FHD: */
+@media screen and (min-width: 600px) (max-width: 1920px)
+{
+    .wallpaper-title{
+        font-size: 40px;
+    }
+
+}
