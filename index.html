@@ -30,16 +30,16 @@
                   <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                       <li class="nav-item">
-                        <a class="nav-link" href="#Portefolio">Portefólio</a>
+                        <a class="nav-link" href="#portefolio">Portefólio</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#Servicos">Serviços</a>
+                        <a class="nav-link" href="#servicos">Serviços</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#Clientes">Clientes</a>
+                        <a class="nav-link" href="#clientes">Clientes</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#Contactos">Contactos</a>
+                        <a class="nav-link" href="#contactos">Contactos</a>
                       </li>
                     </ul>
                   </div>
@@ -80,7 +80,7 @@
 
 
 
-        <div id="Portefolio"></div>
+        <div id="portefolio" style="padding-top: 280px;"></div>
         
         <div class="section_projetos mx-auto">
 
@@ -89,7 +89,9 @@
           <hr>
           <br>
 
-          <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div style="width: 100%;">
+
+          <div class="row mx-auto row-cols-1 row-cols-md-3 g-4">
             <div class="col">
               <div class="card zoom_with_boundary">
                 <img src="./img/estrutura_metalica_2_450x300.png" class="card-img-top" alt="...">
@@ -118,9 +120,10 @@
               </div>
             </div>
           </div>
+          
 
 
-          <div class="row row-cols-1 row-cols-md-3 g-4" style="padding-top:50px;">
+          <div class="row mx-auto row-cols-1 row-cols-md-3">
               <div class="col">
                 <div class="card zoom_with_boundary">
                   <img src="./img/estrutura_metalica_2_450x300.png" class="card-img-top" alt="...">
@@ -151,7 +154,7 @@
             </div>
 
 
-            <div class="row row-cols-1 row-cols-md-3 g-4" style="padding-top:50px;">
+            <div class="row mx-auto row-cols-1 row-cols-md-3 g-4">
               <div class="col">
                 <div class="card zoom_with_boundary">
                   <img src="./img/estrutura_metalica_2_450x300.png" class="card-img-top" alt="...">
@@ -180,6 +183,9 @@
                 </div>
               </div>
             </div>
+
+          </div>
+
           <br>
           <!-- Link para uma página externa com todas as obras do portefólio -->
           <!-- <a href="./html/portefolio.html" class="body_text"><p>Ver mais</p></a> -->
@@ -189,7 +195,7 @@
           
 
 
-        <div id="Servicos" style="padding-top: 160px;"></div>
+        <div id="servicos" style="padding-top: 160px;"></div>
 
 
 
@@ -302,7 +308,7 @@
 
 
 
-        <div id="Clientes" style="padding-top: 160px;"></div>
+        <div id="clientes" style="padding-top: 160px;"></div>
         <div class="section_clientes mx-auto" align="center">
           <h1 class="Title">Clientes</h1>
           <hr>
@@ -337,7 +343,7 @@
 
 
 
-        <div id="Contactos" style="padding-top: 160px;"></div>
+        <div id="contactos" style="padding-top: 160px;"></div>
           <div class="section_contactos mx-auto" align="center">
             <h1 class="Title">Contactos</h1>
             <hr>
@@ -378,10 +384,12 @@
                 <form action="https://api.staticforms.xyz/submit" method="post">
                     <!-- CONFIGURAÇÕES PARA O FORMULÁRIO -->
                     <input type="hidden" name="accessKey" value="e5b0bbb1-ac95-4a84-84d0-e6d3dc86cb00"> <!--Chave de configuração-->
-                    <input type="hidden" name="redirectTo" value="http://localhost:3000/Projeto_TCEng_v1/html/resposta.html">  <!--URL da página a ser re-direcionada após envio da informação-->
+                    <input type="hidden" name="redirectTo" value="https://telmosc.github.io/TCEngineers/html/resposta.html">  <!--URL da página a ser re-direcionada após envio da informação-->
                     <input type="hidden" name="replyTo" value="@"> <!-- @ responde para o email do cliente -->
                     <input type="text" name="honeypot" style="display: none;">
                     <!-- FIM DAS CONFIGURAÇÕES PARA O FORMULÁRIO -->
+
+                    <!-- https://telmosc.github.io/TCEngineers/html/resposta.html -->
 
 
                     <input type="text" class="form-control mb-2" name="$Name" id="Nome" placeholder="Nome" required>
@@ -391,9 +399,12 @@
                     <script> 
                       document.getElementById("message").innerText = "Thank you for submitting this form"; 
                     </script>
-                    <button type="submit" class="btn btn-outline-secondary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" value="Submit">Enviar</button>
+                    <button type="submit" class="btn btn-outline-secondary" value="Submit">Enviar</button>
 
-                    
+
+                    <!-- Código do offcanvas da mensagem de confirmação de submissão do form de contacto
+                    Adicionar data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" às configs do button do form
+
                     <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                       <div class="offcanvas-header">
                         <h5 class="offcanvas-title" id="offcanvasRightLabel">Mensagem enviada</h5>
@@ -402,9 +413,8 @@
                       <div class="offcanvas-body">
                         <p>Obrigado por contactar a TC Engineers. Iremos dar resposta com a maior brevidade possível.</p>
                       </div>
-                    </div>
+                    </div> -->
                    
-
                 </form>
               </div>
 

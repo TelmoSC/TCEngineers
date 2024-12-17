@@ -225,9 +225,15 @@ footer{
     margin-top: -100px;
 }
 
+.section_projetos .row{
+    padding-top:50px;
+}
+
 .section_projetos .card{
     width: 450px;
     text-align: center;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .section_projetos .card-img-top{
@@ -446,6 +452,10 @@ footer{
 
     .section_projetos{
         height: 3000px;
+    }
+
+    .section_projetos .row{
+        padding-top:25px;
     }
 
     .section_servicos{
