@@ -141,7 +141,7 @@ footer{
     font-weight: 600;
     font-style: normal;
     font-size: 50px;
-    padding-right: 30px;
+    padding-right: 20px;
     white-space: nowrap;
     overflow: hidden;
     transform: translateY(-50%);
@@ -211,9 +211,11 @@ footer{
     margin: 0px;
 }
 
-/* .dropdown-menu{
-    background-color: rgb(240,240,240);
-} */
+
+.section_wallpaper .card-img-overlay{
+    padding-top: 600px;
+}
+
 
 /* section_0: Portefólio */
 .section_projetos{
@@ -302,32 +304,43 @@ footer{
     filter: none;
 }
 
-
 .section_clientes{
-    height: 200px;
+    height: 300px;
     max-width: 80%;
 }
 
 .card_clientes{
+    padding: 20px;
     background-color: white;
     border-radius: 5px;
-    height: 200px;
+    min-height: 200px;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.logo_clientes{
+    height: 100px;
+    padding: 10px;
+    filter: brightness(120%) grayscale(100%);
+    transition: 0.3s ease-in-out;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.logo_clientes{
-    height: 100px;
+.logo_clientes img{
     max-width: 100%;
-    padding-left: 50px;
+    object-fit: contain;
+    vertical-align: middle;
 }
 
-
-
-
-
-
+.logo_clientes:hover{
+    filter: none;
+}
 
 .section_contactos{
     height: 500px;
@@ -424,8 +437,33 @@ footer{
     }
 
     .wallpaper-title{
-        font-size: 30px;
+        font-size: 25px;
     }
+
+    .section_wallpaper .card-img-overlay{
+        padding-top: 450px;
+    }
+
+    .section_projetos{
+        height: 3000px;
+    }
+
+    .section_servicos{
+        height: 4000px;
+    }
+
+    .section_servicos .img-card{
+        filter:none;
+    }
+
+    .section_clientes{
+        height: 450px;
+    }
+
+    .section_contactos{
+        height: 1250px;
+    }
+
 }
 
 /* Configurações para tablets FHD: */
@@ -434,5 +472,4 @@ footer{
     .wallpaper-title{
         font-size: 40px;
     }
-
 }
