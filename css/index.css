@@ -470,6 +470,10 @@ footer{
         height: 450px;
     }
 
+    .logo_clientes{
+        filter:none;
+    }
+
     .section_contactos{
         height: 1250px;
     }
